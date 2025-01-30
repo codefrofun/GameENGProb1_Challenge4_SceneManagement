@@ -32491,6 +32491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4540558081880289479, guid: 22b7404268a4b9b47932f59fc571da6a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5602596366031757439, guid: 22b7404268a4b9b47932f59fc571da6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.699158
@@ -32531,6 +32535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5786714367579587935, guid: 22b7404268a4b9b47932f59fc571da6a, type: 3}
+      propertyPath: playerRigidbody
+      value: 
+      objectReference: {fileID: 1632535877}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32539,6 +32547,11 @@ PrefabInstance:
 --- !u!4 &1632535873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5602596366031757439, guid: 22b7404268a4b9b47932f59fc571da6a, type: 3}
+  m_PrefabInstance: {fileID: 1632535872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1632535877 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3241927284885321760, guid: 22b7404268a4b9b47932f59fc571da6a, type: 3}
   m_PrefabInstance: {fileID: 1632535872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1844407466
@@ -32585,7 +32598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f94fdbe427d034d8eda43023e1b329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circle: {fileID: 1844407466}
 --- !u!1001 &8172654112708445254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32594,6 +32606,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6405138219000092009, guid: bf15841e0645bfa49bfbfb0f83e10724, type: 3}
+      propertyPath: sceneName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -6405138219000092009, guid: bf15841e0645bfa49bfbfb0f83e10724, type: 3}
+      propertyPath: spawnPointName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2468059499905234957, guid: bf15841e0645bfa49bfbfb0f83e10724, type: 3}
       propertyPath: m_Name
       value: Trigger

@@ -19,7 +19,16 @@ public class PlayerMovement : MonoBehaviour
         // Get the CharacterController component attached to the GameObject
         playerRigidbody = this.GetComponent<Rigidbody2D>();
         // Subscribe to the MovePlayerEvent to update movement direction
-        InputActions.MovePlayerEvent += UpdateMoveVector;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+            InputActions.MovePlayerEvent += UpdateMoveVector;
     }
 
     // Method to update the movement direction based on the input from InputManager
