@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+
     public float moveSpeed = 2.0f;
     public Rigidbody2D playerRigidbody; // Reference to the CharacterController component for movement control
     public Vector2 moveVector;
