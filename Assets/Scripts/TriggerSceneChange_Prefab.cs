@@ -16,14 +16,14 @@ public class TriggerSceneChange_Prefab : MonoBehaviour
             {
                 Debug.Log("Player entered trigger. Changing scene to: " + sceneName + " and spawn point: " + spawnPointName);
 
-                if (GameSceneManager.instance != null)
+                if (GameManager.Instance != null)
                 {
-                    GameSceneManager.instance.ChangeScene(sceneName, spawnPointName);
+                    GameManager.Instance.levelManager.LoadSceneToSpawnPosition(sceneName, spawnPointName);
                 }
                 else
                 {
-                    Debug.LogError("GameSceneManager instance is not found!");
-                }
+                    Debug.LogError("Game Manager instance is not found!");
+                } 
             }
         }
     }
