@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TriggerSceneChange_Prefab : MonoBehaviour
 {
-    public string sceneName;
-    public string spawnPointName;
+    [SerializeField] private string sceneName;
+    [SerializeField] private string spawnPointName;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
